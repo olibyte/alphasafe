@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#This code uses Textbelt to send an alert SMS to the desired recipient
+
+#FREE VERSION
+# Visit https://github.com/typpo/textbelt for instructions on how to configure your free request
+#curl -X POST http://my_textbelt_server/text \
+#   -d number=5551234567 \
+#   -d "message=I sent this message for free with Textbelt"
+
+#PREMIUM VERSION
+# Visit https://github.com/typpo/textbelt to generate your API key and instructions on how to configure your paid request
+curl -X POST http://textbelt.com/text \
+ -d number=5551234567 \
+ -d "message=Motion was detected in your home."

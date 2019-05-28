@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#This code uses SSMTP to send an alert email to the desired recipient
+#https://raspberry-projects.com/pi/software_utilities/email/ssmtp-to-send-emails
+
+echo "Motion detected in the home. Please find attached and check the images created in the AlphaSafe security directory" | mail -s "Security Breach: Motion Detected" recipient@domain.com
+
